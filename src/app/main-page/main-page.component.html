@@ -1,0 +1,18 @@
+<p>
+    main-page works!
+</p>
+
+
+<!-- <div>
+    {{ localData | async | json }}
+</div> -->
+<div *ngFor="let item of localData | async">
+    {{ item.name }}
+</div>
+<app-card [data]="'xxx'" (clicked)="cardClick($event)"></app-card>
+
+<div *ngIf="txt">
+    {{txt}}
+</div>
+
+<div>{{ data }}</div>
